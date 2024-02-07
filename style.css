@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+
+
+
+
+.qoute-box{
+    background-color:rgb(255, 255, 255);
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 5px 5px 1px rgb(21, 1, 1);
+    border-radius: 10px;
+    text-align: center;
+}
+.qoute-box h1{
+    font-size: 2.587rem;
+    margin-bottom: 2rem; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+
+
+
+    position: relative;
+}
+.qoute-box h1::after{
+    content: "";
+    width: 70px;
+    height: 4.5px;
+    border-radius: 3px;
+    position: absolute;
+    background: rgb(0, 0, 0);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.qoute-box blockquote{
+    font-size: 25px;
+    min-height: 110px;
+}
+
+
+.qoute-box blockquote::before,.qoute-box blockquote::after{
+    content: '"';
+
+}
+
+.qoute-box{
+    padding: 20px;
+}
+.qoute-box span{
+  display: block;
+  margin-top: 1opx;
+  float: right;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.qoute-box span::before{
+    content: '';
+    width: 30px;
+    height: 2px;
+    background:black;
+    position:absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.btn{
+    padding: 10px 20px;
+
+    
+}
+
+.qoute-box div{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn{
+    background: rgb(23,124,229);
+    margin-left: 10px;
+    border-radius: 50px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.qoute-box button:nth-child(2){
+    background: #ffff;
+    color:rgb(23,124,229) ;
+    border: 1px solid rgb(23,124,229) ;
+    
+}
+
+.btn i{
+    font-size: 1rem;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .qoute-box{
+        width: 15rem;
+    }
+    .qoute-box h1{
+        font-size: 2.7rem;
+    }
+  .qoute-box span{
+    margin-block:10px;
+    font-size:1rem
+  }
+  .btn{
+    font-size:1rem;
+    
+  }
+}
